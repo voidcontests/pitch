@@ -22,7 +22,7 @@
   function fit() {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
-    const scale = Math.min(vw / 1920, vh / 1080);
+    const scale = Math.max(vw / 1920, vh / 1080);
     stage.style.transform = `scale(${scale})`;
   }
   fit();
