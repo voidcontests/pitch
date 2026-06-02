@@ -61,6 +61,11 @@
         e.preventDefault(); prev(); break;
       case 'Home': e.preventDefault(); go(0); break;
       case 'End': e.preventDefault(); go(total - 1); break;
+      case 'g':
+      case 'G':
+        e.preventDefault();
+        document.body.dataset.grid = document.body.dataset.grid === 'on' ? 'off' : 'on';
+        break;
     }
   });
 

@@ -57,6 +57,7 @@ html, body {
   z-index: 0;
   mask-image: radial-gradient(ellipse at center, black 30%, transparent 90%);
 }
+body[data-grid="off"] .viewport::before { display: none; }
 .grain {
   position: fixed; inset: 0;
   pointer-events: none;
@@ -140,12 +141,12 @@ html, body {
 
 /* === TYPOGRAPHY === */
 .eyebrow {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--muted);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .title {
@@ -489,15 +490,15 @@ html, body {
   color: var(--muted);
   font-weight: 400;
   margin-left: 6px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
 }
 .stat-l {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--muted);
-  font-weight: 500;
+  font-weight: 700;
 }
 
 /* === STATS ROW (reusable) === */
@@ -656,7 +657,7 @@ html, body {
 .hint {
   position: fixed;
   bottom: 32px; right: 48px;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -667,7 +668,7 @@ html, body {
 .brand {
   position: fixed;
   top: 32px; left: 48px;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -679,7 +680,7 @@ html, body {
 .pageno {
   position: fixed;
   top: 32px; right: 48px;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.22em;
   color: var(--ink);
@@ -695,13 +696,13 @@ html, body {
 
 /* shared editorial eyebrow */
 .edt-eyebrow {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 22px;
-  font-weight: 500;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
   gap: 12px;
@@ -859,7 +860,7 @@ html, body {
 }
 .task-list li:last-child { border-bottom: none; }
 .task-n {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.15em;
   color: var(--dim);
@@ -898,7 +899,7 @@ html, body {
   border-bottom: 1px solid var(--line);
 }
 .prod-n {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 28px;
   color: var(--dim);
   font-weight: 700;
@@ -924,7 +925,7 @@ html, body {
   background: var(--ink);
   color: var(--bg);
   border-radius: 14px;
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 18px;
   position: relative;
   overflow: hidden;
@@ -987,7 +988,7 @@ html, body {
   border-radius: 50%;
   font-weight: 700;
   font-size: 18px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
 }
 .det-sig-h {
   font-size: 22px;
@@ -1020,7 +1021,7 @@ html, body {
   box-shadow: 0 24px 60px rgba(14,20,17,0.25);
 }
 .det-out-label {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -1085,7 +1086,7 @@ html, body {
 .mkt-aud-tag {
   display: inline-block;
   width: 90px;
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1094,7 +1095,7 @@ html, body {
   padding: 4px 10px;
   margin-right: 14px;
   border-radius: 4px;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
 }
 .mkt-nest {
@@ -1134,7 +1135,7 @@ html, body {
   box-shadow: 0 24px 60px rgba(11,15,26,0.25);
 }
 .nest-tag {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1185,7 +1186,7 @@ html, body {
 .biz-col.accent .biz-list li::before { color: var(--bg); }
 .biz-col.accent .biz-unit { color: #888; }
 .biz-tag {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1256,12 +1257,12 @@ html, body {
   background: var(--ink);
 }
 .banner-label {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--muted);
-  font-weight: 600;
+  font-weight: 700;
 }
 .banner-metrics { display: flex; align-items: center; gap: 50px; }
 .banner-metrics > div { display: flex; flex-direction: column; gap: 4px; }
@@ -1274,7 +1275,7 @@ html, body {
   color: var(--ink);
 }
 .banner-k {
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 12px;
   color: var(--muted);
   text-transform: uppercase;
@@ -1296,7 +1297,7 @@ html, body {
 }
 .fin-hero-l { display: flex; flex-direction: column; gap: 12px; }
 .fin-h-label {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1347,7 +1348,7 @@ html, body {
   border-radius: 0 2px 2px 0;
 }
 .kpi-k {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1401,7 +1402,7 @@ html, body {
   box-shadow: 0 0 0 4px var(--bg);
 }
 .ms-year {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 22px;
   font-weight: 700;
   color: var(--fg);
@@ -1450,7 +1451,7 @@ html, body {
 .rm-step.dim .rm-bullet { border-color: var(--dim); background: var(--bg); }
 .rm-step.dim .rm-bullet { border-color: var(--dim); }
 .rm-period {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1470,7 +1471,7 @@ html, body {
   border-top: 1px dashed var(--line);
 }
 .rm-risks-label {
-  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1479,9 +1480,9 @@ html, body {
 }
 .risk { display: flex; flex-direction: column; gap: 6px; }
 .risk-k {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'DM Sans', sans-serif; font-weight: 700;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--ink);
   letter-spacing: 0.04em;
   text-transform: uppercase;
