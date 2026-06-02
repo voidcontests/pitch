@@ -31,7 +31,7 @@ html, body {
   margin: 0; padding: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: 'Bricolage Grotesque', Helvetica, Arial, sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -82,7 +82,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 70px 80px 150px;
+  padding: 50px 60px 140px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -107,7 +107,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   align-items: flex-start;
   gap: 28px;
 }
-.slide:has(.title-top) { align-items: flex-start; padding-top: 120px; }
+.slide:has(.title-top) { align-items: flex-start; padding-top: 80px; }
 .title-top { gap: 36px; }
 
 /* === CREDITS BLOCK (title slide) === */
@@ -119,7 +119,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   align-items: start;
 }
 .credits-label {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -132,7 +132,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 30px;
   font-weight: 500;
   letter-spacing: -0.01em;
@@ -141,7 +141,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 
 /* === TYPOGRAPHY === */
 .eyebrow {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -150,7 +150,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 }
 
 .title {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 112px;
   line-height: 0.98;
   font-weight: 600;
@@ -161,7 +161,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 }
 
 .subtitle {
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 38px;
   line-height: 1.35;
   font-weight: 400;
@@ -171,7 +171,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   max-width: 1300px;
 }
 .subtitle.plain {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-style: normal;
   font-size: 28px;
   line-height: 1.45;
@@ -180,7 +180,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 }
 
 .slide-title {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 76px;
   line-height: 1.0;
   font-weight: 600;
@@ -478,7 +478,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 .end-stats .stat { background: var(--paper); border-color: var(--ink) !important; }
 .end-stats .stat::before { display: none; }
 .stat-v {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 64px;
   font-weight: 700;
   letter-spacing: -0.035em;
@@ -490,10 +490,10 @@ body[data-grid="off"] .viewport::before { display: none; }
   color: var(--muted);
   font-weight: 400;
   margin-left: 6px;
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
 }
 .stat-l {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -653,11 +653,13 @@ body[data-grid="off"] .viewport::before { display: none; }
   height: 10px;
   background: var(--ink);
 }
+body[data-dark="on"] .dots .d::before { background: rgba(255,255,255,0.30); }
+body[data-dark="on"] .dots .d.active::before { background: var(--bg); }
 
 .hint {
   position: fixed;
   bottom: 32px; right: 48px;
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.25em;
   text-transform: uppercase;
@@ -668,7 +670,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 .brand {
   position: fixed;
   top: 32px; left: 48px;
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -680,7 +682,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 .pageno {
   position: fixed;
   top: 32px; right: 48px;
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.22em;
   color: var(--ink);
@@ -696,7 +698,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 
 /* shared editorial eyebrow */
 .edt-eyebrow {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.32em;
   text-transform: uppercase;
@@ -707,14 +709,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   align-items: center;
   gap: 12px;
 }
-.edt-eyebrow::before {
-  content: '';
-  display: inline-block;
-  width: 28px; height: 2px;
-  background: var(--muted);
-}
 .edt-eyebrow.alt { color: var(--muted); }
-.edt-eyebrow.alt::before { background: var(--muted); }
 .edt-reveal { opacity: 0; }
 
 /* ============ SLIDE 2 · EDITORIAL ============ */
@@ -733,7 +728,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   align-items: flex-start;
 }
 .mega-num {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 420px;
   font-weight: 700;
   line-height: 0.82;
@@ -767,7 +762,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 .mega-cap em { color: var(--dim); font-style: italic; }
 .edt-body { padding-top: 12px; }
 .edt-h {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 72px;
   font-weight: 600;
   letter-spacing: -0.028em;
@@ -806,7 +801,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   align-items: start;
 }
 .goal-quote {
-  font-family: 'Instrument Serif', 'Times New Roman', serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 84px;
   line-height: 1.05;
   font-weight: 400;
@@ -860,7 +855,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 }
 .task-list li:last-child { border-bottom: none; }
 .task-n {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.15em;
   color: var(--dim);
@@ -868,7 +863,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 
 /* ============ SLIDE 4 · PRODUCT MANIFESTO ============ */
 .prod-h {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 80px;
   line-height: 0.98;
   font-weight: 600;
@@ -899,7 +894,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   border-bottom: 1px solid var(--line);
 }
 .prod-n {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 28px;
   color: var(--dim);
   font-weight: 700;
@@ -925,7 +920,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   background: var(--ink);
   color: var(--bg);
   border-radius: 14px;
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 18px;
   position: relative;
   overflow: hidden;
@@ -951,7 +946,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 /* ============ SLIDE 5 · DETECTOR FUNNEL ============ */
 .det-layout { gap: 24px; }
 .det-h {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 72px;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -988,7 +983,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   border-radius: 50%;
   font-weight: 700;
   font-size: 18px;
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
 }
 .det-sig-h {
   font-size: 22px;
@@ -1021,7 +1016,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   box-shadow: 0 24px 60px rgba(14,20,17,0.25);
 }
 .det-out-label {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -1031,7 +1026,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 }
 .det-out-metric { display: flex; align-items: baseline; gap: 16px; }
 .det-out-v {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 160px;
   font-weight: 700;
   letter-spacing: -0.05em;
@@ -1067,7 +1062,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   align-items: start;
 }
 .mkt-h {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 76px;
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -1086,7 +1081,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 .mkt-aud-tag {
   display: inline-block;
   width: 90px;
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1135,7 +1130,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   box-shadow: 0 24px 60px rgba(11,15,26,0.25);
 }
 .nest-tag {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1186,14 +1181,14 @@ body[data-grid="off"] .viewport::before { display: none; }
 .biz-col.accent .biz-list li::before { color: var(--bg); }
 .biz-col.accent .biz-unit { color: #888; }
 .biz-tag {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--muted);
 }
 .biz-price {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 72px;
   font-weight: 700;
   letter-spacing: -0.04em;
@@ -1257,7 +1252,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   background: var(--ink);
 }
 .banner-label {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
@@ -1267,7 +1262,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 .banner-metrics { display: flex; align-items: center; gap: 50px; }
 .banner-metrics > div { display: flex; flex-direction: column; gap: 4px; }
 .banner-v {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 52px;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -1275,7 +1270,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   color: var(--ink);
 }
 .banner-k {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 12px;
   color: var(--muted);
   text-transform: uppercase;
@@ -1297,14 +1292,14 @@ body[data-grid="off"] .viewport::before { display: none; }
 }
 .fin-hero-l { display: flex; flex-direction: column; gap: 12px; }
 .fin-h-label {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--muted);
 }
 .fin-h-val {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 260px;
   font-weight: 700;
   letter-spacing: -0.055em;
@@ -1348,14 +1343,14 @@ body[data-grid="off"] .viewport::before { display: none; }
   border-radius: 0 2px 2px 0;
 }
 .kpi-k {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--muted);
 }
 .kpi-v {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif;
   font-size: 46px;
   font-weight: 700;
   letter-spacing: -0.025em;
@@ -1402,7 +1397,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   box-shadow: 0 0 0 4px var(--bg);
 }
 .ms-year {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 22px;
   font-weight: 700;
   color: var(--fg);
@@ -1451,13 +1446,13 @@ body[data-grid="off"] .viewport::before { display: none; }
 .rm-step.dim .rm-bullet { border-color: var(--dim); background: var(--bg); }
 .rm-step.dim .rm-bullet { border-color: var(--dim); }
 .rm-period {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
 }
-.rm-title { font-family: 'Bricolage Grotesque', sans-serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; }
+.rm-title { font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-size: 32px; font-weight: 600; letter-spacing: -0.02em; }
 .rm-desc { font-size: 17px; color: var(--muted); line-height: 1.4; }
 .rm-step.dim .rm-title, .rm-step.dim .rm-desc { color: var(--dim); }
 
@@ -1471,7 +1466,7 @@ body[data-grid="off"] .viewport::before { display: none; }
   border-top: 1px dashed var(--line);
 }
 .rm-risks-label {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1480,7 +1475,7 @@ body[data-grid="off"] .viewport::before { display: none; }
 }
 .risk { display: flex; flex-direction: column; gap: 6px; }
 .risk-k {
-  font-family: 'DM Sans', sans-serif; font-weight: 700;
+  font-family: 'Onest', Helvetica Neue, Arial, sans-serif; font-weight: 700;
   font-size: 16px;
   font-weight: 700;
   color: var(--ink);
@@ -1489,6 +1484,100 @@ body[data-grid="off"] .viewport::before { display: none; }
 }
 .risk-v { font-size: 17px; color: var(--fg); line-height: 1.45; }
 .risk { padding-left: 16px; border-left: 2px solid var(--line-strong); }
+
+/* ============ SLIDE 11 · THANKS / BRUTALIST DARK ============ */
+.slide-thanks {
+  background: var(--bg);
+  color: var(--ink);
+  padding: 50px 60px 80px;
+  overflow: hidden;
+  display: block;
+}
+.thx {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+.thx-mark {
+  font-family: 'Onest', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.7;
+}
+.thx-mark::after {
+  content: '';
+  display: inline-block;
+  width: 10px; height: 10px;
+  background: var(--ink);
+  margin-left: 14px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.thx-big {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  margin-left: -10px;
+}
+.thx-line {
+  font-family: 'Onest', sans-serif;
+  font-size: 170px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.045em;
+  color: var(--ink);
+  display: block;
+}
+.thx-line.thx-thin {
+  font-weight: 300;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--ink);
+  font-style: italic;
+}
+.thx-foot {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+.thx-q {
+  font-family: 'Onest', sans-serif;
+  font-size: 44px;
+  font-weight: 500;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  letter-spacing: -0.01em;
+}
+.thx-q-dot {
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--ink);
+  animation: thxBlink 1.4s ease-in-out infinite;
+}
+@keyframes thxBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+.thx-meta {
+  font-family: 'Onest', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: right;
+  line-height: 1.7;
+}
 
 /* === REVEAL ANIMATIONS === */
 .reveal {

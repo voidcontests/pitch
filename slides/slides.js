@@ -33,6 +33,9 @@
   function setPage(n) {
     if (pageno) pageno.textContent = String(n + 1).padStart(2, '0');
   }
+  function syncDark(n) {
+    document.body.dataset.dark = slides[n].classList.contains('slide-dark') ? 'on' : 'off';
+  }
   function go(n) {
     n = Math.max(0, Math.min(total - 1, n));
     if (n === idx) return;
@@ -42,8 +45,10 @@
     slides[idx].classList.add('is-active');
     dots[idx].classList.add('active');
     setPage(idx);
+    syncDark(idx);
   }
   setPage(0);
+  syncDark(0);
 
   function next() { go(idx + 1); }
   function prev() { go(idx - 1); }
