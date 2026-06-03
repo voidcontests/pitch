@@ -1198,12 +1198,14 @@ body[data-dark="on"] .dots .d.active::before { background: var(--bg); }
 }
 .biz-col.accent .biz-price { color: var(--bg); }
 .biz-unit {
-  display: block;
-  font-size: 16px;
+  display: inline-block;
+  font-size: 24px;
   color: var(--muted);
   font-weight: 400;
-  margin-top: 6px;
+  margin-left: 12px;
   letter-spacing: 0;
+  vertical-align: baseline;
+  opacity: 0.75;
 }
 .biz-name {
   font-size: 24px;
